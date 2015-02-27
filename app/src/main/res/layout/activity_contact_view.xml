@@ -13,7 +13,7 @@
 			android:id="@+id/name"
 			android:layout_width="match_parent"
 			android:layout_height="wrap_content"
-			android:text="Mike Weispfenning"
+			android:text="@string/example_name"
 			android:textSize="32sp"
 			android:textStyle="bold"
 			android:gravity="center"
@@ -39,7 +39,7 @@
 				<TextView
 					style="@style/contact_view_text"
 					android:id="@+id/title"
-					android:text="Cool Dude"/>
+					android:text="@string/example_title"/>
 
 			</LinearLayout>
 
@@ -73,7 +73,7 @@
 					<TextView
 						style="@style/contact_view_text"
 						android:id="@+id/phone"
-						android:text="(612) 819-7552"/>
+						android:text="@string/example_phone"/>
 
 				</LinearLayout>
 
@@ -109,7 +109,7 @@
 					<TextView
 						style="@style/contact_view_text"
 						android:id="@+id/email"
-						android:text="michael.weispfenning@gmail.com"/>
+						android:text="@string/example_email"/>
 
 				</LinearLayout>
 
@@ -145,7 +145,7 @@
 					<TextView
 						style="@style/contact_view_text"
 						android:id="@+id/twitter"
-						android:text="weispfenning"/>
+						android:text="@string/example_twitter"/>
 
 				</LinearLayout>
 

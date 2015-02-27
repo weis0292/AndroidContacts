@@ -19,10 +19,16 @@
 	<string name="label_email">EMAIL</string>
 	<string name="label_twitter">TWITTER</string>
 
-	<string name="button_ok">Ok</string>
+	<string name="button_ok">OK</string>
 	<string name="button_cancel">Cancel</string>
 
 	<string name="delete_contact">Delete %s?</string>
 	<string name="no_name_error">A contact must have a name.</string>
+
+	<string name="example_name">Mike Weispfenning</string>
+	<string name="example_title">Captain of the Little Minnow</string>
+	<string name="example_phone">(612) 555-0123</string>
+	<string name="example_email">michael.weispfenning@gmail.com</string>
+	<string name="example_twitter">\@weispfenning</string>
 
 </resources>

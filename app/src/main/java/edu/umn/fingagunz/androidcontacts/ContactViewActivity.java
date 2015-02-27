@@ -101,11 +101,10 @@ public class ContactViewActivity extends Activity
 			String name = cursor.getString(cursor.getColumnIndex(ContactTable.COLUMN_NAME));
 			((TextView)findViewById(R.id.name)).setText(name);
 
-			Boolean shouldShowSeparator = false;
 			String title = cursor.getString(cursor.getColumnIndex(ContactTable.COLUMN_TITLE));
-			setView(title, R.id.title, R.id.title_layout, 0, shouldShowSeparator);
+			setView(title, R.id.title, R.id.title_layout, 0, false);
 
-			shouldShowSeparator = shouldShowSeparator || ((title != null) && !title.isEmpty());
+			Boolean shouldShowSeparator = (title != null) && !title.isEmpty();
 			String phone = cursor.getString(cursor.getColumnIndex(ContactTable.COLUMN_PHONE));
 			setView(phone, R.id.phone, R.id.phone_layout, R.id.separator_title_phone, shouldShowSeparator);
 
