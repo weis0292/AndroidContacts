@@ -102,6 +102,14 @@ public class ContactsActivity extends ListActivity implements LoaderManager.Load
 		startActivity(intent);
 	}
 
+	private void editContact(long id)
+	{
+		Uri contactUri = ContactContentProvider.getUriFromContactId(id);
+		Intent intent = new Intent(this, ContactEditActivity.class);
+		intent.putExtra(ContactContentProvider.CONTENT_ITEM_TYPE, contactUri);
+		startActivity(intent);
+	}
+
 	// This seems like it should already be a built in method, but it is mostly for the nested
 	// classes that need access to the parent activity.  This will provide them that access.
 	private Activity getActivity()
@@ -151,6 +159,10 @@ public class ContactsActivity extends ListActivity implements LoaderManager.Load
 						// If the user cancels, we want to do nothing, so we set a null listener on the negative button
 						.setNegativeButton(R.string.button_cancel, null)
 						.show();
+					break;
+
+				case R.id.action_edit:
+					editContact(contactId);
 					break;
 
 				case R.id.action_view:
