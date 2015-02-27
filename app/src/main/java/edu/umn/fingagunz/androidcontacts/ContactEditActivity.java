@@ -11,7 +11,6 @@ import android.telephony.PhoneNumberFormattingTextWatcher;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.widget.EditText;
-import android.widget.TextView;
 
 public class ContactEditActivity extends Activity
 {

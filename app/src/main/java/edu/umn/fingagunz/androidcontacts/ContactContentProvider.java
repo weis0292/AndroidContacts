@@ -14,6 +14,7 @@ import android.text.TextUtils;
 
 import java.util.Arrays;
 import java.util.HashSet;
+
 public class ContactContentProvider extends ContentProvider
 {
 	private static final int CONTACTS = 0x0A;
